@@ -18,9 +18,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation     'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly    'org.junit.platform:junit-platform-launcher'
 }
 
 jar {
@@ -36,7 +36,7 @@ jar {
     archiveExtension  = 'jar'
 
     //EXCLUDE FILES
-    exclude('application-profile2.properties')
+    exclude 'application-profile2.properties'
 
     //ADD ATTRIBUTES TO MANIFEST.MF
     manifest {
@@ -44,4 +44,6 @@ jar {
     }
 
 }
+
+
 
